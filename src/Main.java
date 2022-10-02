@@ -26,5 +26,19 @@ public class Main {
         }
 
 
+        int num = sc.nextInt();
+        int[] a = new int[num / 2];
+        int f = num / 2;
+        System.out.print(1);
+        for (int i = 0; i < num / 2 + 1; i++) {
+            int c = num % 2;
+            num /= 2;
+            a[i] = c;
+            --f;
+            System.out.print(a[f]);
+        }
+
+        //ctrl+alt+l
+
     }
 }
