@@ -1,3 +1,4 @@
+package az.company.task;
 import java.util.Scanner;
 
 public class Main {
