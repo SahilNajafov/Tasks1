@@ -41,6 +41,8 @@ public class Main {
         //---------------------------------------------------------------------------------------------------------
 
 
+//        System.out.println("Enter number: ");
+//        int num = sc.nextInt();
 //        int i = 0;
 //        int c = 0;
 //        while (true) {
@@ -53,8 +55,24 @@ public class Main {
 //        }
 //
 //        System.out.println(i);
-
+//
 //        int g = i;
+//        int a, b = 0;
+//        int x = num;
+//        while (true) {
+//            a = num % 10;
+//            b += a * (Math.pow(10, (g - 1)));
+//            num /= 10;
+//            g--;
+//            if (num == 0) break;
+//        }
+//
+//        System.out.println(b);
+//        if (x == b) {
+//            System.out.println("Polindrome");
+//        } else {
+//            System.out.println("Not Polindrome");
+//        }
 
 
         /*
