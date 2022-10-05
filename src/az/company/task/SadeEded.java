@@ -12,7 +12,7 @@ public class SadeEded {
 
         int i = 1;
         int b = 0;
-        while (i <= (num / 2)) {
+        while (i <= (num / 2) && num>0) {
             if (num % i == 0) {
                 b++;
             }
