@@ -24,13 +24,14 @@ public class ArrayUp {
             for (int j = h; j < a; j++) {
                 if(min >= arr[j]){
                     min = arr[j];
+                    x=j; //bu yox idi
                 }
             }
-            for (int k = 0; k < a; k++) {
-                if(arr[k]==min){
-                    x = k;
-                }
-            }
+//            for (int k = 0; k < a; k++) {
+//                if(arr[k]==min){
+//                    x = k;
+//                }
+//            }
             c = arr[n];
             arr[n] = min;
             arr[x] = c;
