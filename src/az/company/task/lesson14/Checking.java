@@ -8,17 +8,18 @@ public class Checking {
 
     }
     static boolean first(String s,String[] arr) {
-        for(int i = 0; i<arr.length;i++) {
-            if(s.contains(arr[i])) {
-                s=s.replace(arr[i], "");
+        for(int i = -1; i<arr.length-2;i++) {
+            String a = s;
+            for (int j = i+1; j < arr.length; j++) {
+                if(a.contains(arr[j])){
+                    a=a.replace(arr[j],"");
+                }
+            }
+            if(a.equals("")){
+                return true;
             }
         }
-        if(s.equals("")) {
-            return true;
-        }
-        else {
-            return false;
-        }
+        return false;
     }
 
 }

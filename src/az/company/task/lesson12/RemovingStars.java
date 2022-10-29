@@ -9,13 +9,14 @@ public class RemovingStars {
         String c = scanner.next();
 //        String c ="*hee*lll*oo*";
 
-        if(c.indexOf("*")==0){
-            c=c.substring(1);
-        }
+
         while(true){
             int b = c.indexOf("*");
-
-            c=c.replace(c.substring(b-1,b+1),"");
+            if(b==0){
+                c=c.substring(1);
+                continue;
+            }
+            c=c.replace(c.substring(b-1,b+1),""); // \\bundan ver *dan evvel
             boolean x = c.contains("*");
             if(!x){
                 System.out.println(c);
