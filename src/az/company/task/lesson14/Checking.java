@@ -2,8 +2,8 @@ package az.company.task.lesson14;
 
 public class Checking {
     public static void main(String[] args) {
-        String s = "catsandog";
-        String[] arr = new String[]{"cats","dog","sand","and","cat"};
+        String s = "cars";
+        String[] arr = new String[]{"car","ca","rs"};
         System.out.println(first(s,arr));
 
     }
