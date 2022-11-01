@@ -24,7 +24,12 @@ public class ArrayNumber {
                 System.out.println("index = " + i);
                 result = true;
                 break;
-            } else {
+            }
+//            else if(b<arr[i]){
+//                System.out.println(i);
+//                break;
+//            }
+        else {
                 result = false;
             }
         }

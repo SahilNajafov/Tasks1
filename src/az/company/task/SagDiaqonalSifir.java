@@ -15,6 +15,9 @@ public class SagDiaqonalSifir {
                 arr[x][y] = scanner.nextInt();
             }
         }
+
+
+
         int i = 0;
         while(i <= arr.length) {
             for (int j = 0;j < uzunluq;j++) {

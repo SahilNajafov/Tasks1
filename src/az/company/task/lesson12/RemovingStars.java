@@ -5,9 +5,7 @@ import java.util.Scanner;
 public class RemovingStars {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
         String c = scanner.next();
-//        String c ="*hee*lll*oo*";
 
 
         while(true){
@@ -17,8 +15,7 @@ public class RemovingStars {
                 continue;
             }
             c=c.replace(c.substring(b-1,b+1),""); // \\bundan ver *dan evvel
-            boolean x = c.contains("*");
-            if(!x){
+            if(!c.contains("*")){
                 System.out.println(c);
                 break;
             }

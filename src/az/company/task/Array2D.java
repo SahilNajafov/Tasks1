@@ -6,8 +6,7 @@ public class Array2D {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter array's lenght: ");
-        int n = scanner.nextInt();
-        int m = n;
+        int n = scanner.nextInt(), m=n;
         int[][] arr = new int[n][m];
         int cem = 0;
         System.out.println("Enter array's elements: ");
