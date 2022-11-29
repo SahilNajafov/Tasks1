@@ -2,16 +2,17 @@ package az.company.task.genericPractic;
 
 public class MainFor1 {
     public static void main(String[] args) {
-        Box<String> icindeki1 = new Box<>("Top");
-        Box<String> icindeki2 = new Box<>("Oyuncaq");
-        Box<String> icindeki3 = new Box<>("Shar");
+          Box<Top> icindeki1 = new Box<>();
+          Box<Shar> icindeki2 = new Box<>();
+          Box<Oyuncaq> icindeki3 = new Box<>();
 
-        String[] array=new String[3];
-        array[0]= String.valueOf(icindeki1);
-        array[1]= String.valueOf(icindeki2);
-        array[2]= String.valueOf(icindeki3);
 
-        for (String b:array) {
+        Box[] array=new Box[3];
+        array[0]=icindeki1;
+        array[1]= icindeki2;
+        array[2]= icindeki3;
+
+        for (Box b:array) {
             System.out.println(b);
         }
     }

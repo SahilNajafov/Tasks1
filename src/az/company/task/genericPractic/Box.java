@@ -7,14 +7,15 @@ public class Box <T>{
         this.a = a;
     }
 
+    public Box() {
+    }
+
     public T getBox() {
         return a;
     }
 
     @Override
     public String toString() {
-        return "Box{" +
-                "a=" + a +
-                '}';
+        return a.toString();
     }
 }
