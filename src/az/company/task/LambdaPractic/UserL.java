@@ -15,7 +15,7 @@ public class UserL {
         this.expdate = expdate;
     }
 
-    public LocalDate getExpdate() {
+    public LocalDate getUser() {
         return expdate;
     }
 

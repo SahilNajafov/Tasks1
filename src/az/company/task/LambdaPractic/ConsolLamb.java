@@ -16,13 +16,28 @@ public abstract class ConsolLamb {
         userList1.add(new UserL( "Sadiq", "Abdullayev", LocalDate.of(1995, 1, 8), LocalDate.of(1995, 1, 8).plusMonths(3)));
         userList1.add(new UserL( "Hacıağa", "Musayev", LocalDate.of(2003, 10, 18),LocalDate.now().plusMonths(3)));
 
-        Consumer<UserL> method = (n) -> {
-                    if(LocalDate.now().isAfter(n.expdate)){
-                        System.out.println(n);
-                    }
-        };
-        userList1.forEach( method );
+//        Consumer<UserL> method = (n) -> {
+//                    if(LocalDate.now().isAfter(n.expdate)){
+//                        System.out.println(n);
+//                    }
+//        };
+//        userList1.forEach( method );
 
+        Exp exp = new Exp() {
+            @Override
+            public void afterExpDate() {
+                for (UserL a:userList1) {
+                    if(LocalDate.now().isAfter(a.expdate)){
+                        System.out.println(a);
+                    }
+                }
+            }
+        };
+        exp.afterExpDate();
     }
+
+}
+interface Exp{
+    void afterExpDate();
 
 }
